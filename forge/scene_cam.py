@@ -99,6 +99,7 @@ class SceneCamera:
 
         # always look at target
         self._cam_np.look_at(self._target, p3d.LVecBase3f(0, 0, 1))
-        
-    def cam_np(self):
+
+    @property
+    def np(self):
         return self._cam_np
